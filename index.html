@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[DESCRIPCION BREVE — 1 oracion para SEO]">
-    <title>OmarGtz</title>
+    <meta name="description" content="Omar Gutiérrez — Ingeniero informático y diagnóstico electrónico diésel.">
+    <title>Omar Gutiérrez</title>
     <link rel="stylesheet" href="style.css">
     <script>
         (function () {
@@ -18,134 +18,70 @@
 
 <body>
 
-    <header>
-        <nav>
-            <a href="#inicio" class="nav-name">Omar Gutiérrez</a>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#notas">Notas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema"></button>
-        </nav>
-    </header>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema"></button>
 
     <main>
+        <article class="card">
 
-        <!-- ─── Inicio ──────────────────────────────────────── -->
-        <section id="inicio">
-            <div class="container">
-                <h1 class="hero-name">Omar Gutiérrez</h1>
-                <p class="hero-intro">Soy un desarrollador de software independiente y técnico en sistemas electrónicos
-                    de tractocamiones.</p>
+            <header class="card-header">
+                <h1>Omar Gutiérrez</h1>
+                <p class="tagline">Ingeniero informático &middot; Diagnóstico electrónico diésel</p>
+            </header>
+
+            <hr class="divider">
+
+            <div class="card-body">
+                <p class="bio">
+                    A punto de graduarme como ingeniero informático.
+                    Trabajo en diagnóstico y reparación de sistemas electrónicos en motores diésel.
+                    Combino software y electrónica de taller: sin romantizarlo, con método.
+                </p>
+                <nav class="contact" aria-label="Contacto">
+                    <a href="mailto:omargtz.dev@gmail.com">omargtz.dev@gmail.com</a>
+                    <a href="https://github.com/OmarGtze" target="_blank"
+                        rel="noopener noreferrer">github.com/OmarGtze</a>
+                </nav>
             </div>
-        </section>
 
-        <!-- ─── Sobre mi ─────────────────────────────────────── -->
-        <section id="sobre-mi">
-            <div class="container">
-                <p class="section-label">Sobre mi</p>
-                <div class="about-text">
-                    <p>[DESCRIPCION PERSONAL EXTENDIDA — habla de quien eres, que tipo de trabajo haces, de donde vienes
-                        profesionalmente, que te interesa o que te mueve. Sin lenguaje corporativo.]</p>
-                    <p>[PARRAFO ADICIONAL OPCIONAL — puedes hablar de tu enfoque, tu forma de trabajar o proyectos en
-                        los que tienes experiencia.]</p>
-                </div>
-            </div>
-        </section>
+            <hr class="divider">
 
-        <!-- ─── Proyectos ────────────────────────────────────── -->
-        <section id="proyectos">
-            <div class="container">
-                <p class="section-label">Proyectos</p>
+            <section class="card-projects">
+                <span class="section-label">Proyectos</span>
                 <ul class="project-list">
 
                     <li class="project-item">
-                        <div class="project-header">
-                            <span class="project-name">ChefIA</span>
+                        <div class="project-row">
+                            <span class="project-name">ChefAI</span>
                             <span class="project-year">2026</span>
                         </div>
-                        <p class="project-desc">Aplicacion web que permite generar recetas personalizadas basadas en los
-                            ingredientes disponibles.</p>
-                        <p class="project-tech">PHP, MySQL, HTML, CSS, JavaScript</p>
-                        <a href="https://chefia-7e1x.onrender.com/" class="project-link">Ver proyecto</a>
+                        <p class="project-desc">Sitio que genera recetas económicas con los ingredientes que el usuario
+                            tiene en casa.</p>
+                        <p class="project-stack">flask, mongodb, gemini, html, python</p>
                     </li>
 
                     <li class="project-item">
-                        <div class="project-header">
-                            <span class="project-name">Feliz Cumpleaños Luisa!</span>
-                            <span class="project-year">2026</span>
+                        <div class="project-row">
+                            <span class="project-name">[PROYECTO 2]</span>
+                            <span class="project-year">2024</span>
                         </div>
-                        <p class="project-desc">Un pequeño sitio web creado para desearle feliz cumpleaños a mi novia
-                            <3 </p>
-                                <p class="project-tech">HTML, CSS, JavaScript</p>
-                                <a href="https://cumplea-os-luisa-21.vercel.app/" class="project-link">Ver proyecto</a>
+                        <p class="project-desc">[Descripción breve.]</p>
+                        <p class="project-stack">[Tecnología 1], [Tecnología 2]</p>
                     </li>
 
                     <li class="project-item">
-                        <div class="project-header">
-                            <span class="project-name">Angel Guardián de la Carretera</span>
-                            <span class="project-year">~2026</span>
+                        <div class="project-row">
+                            <span class="project-name">[PROYECTO 3]</span>
+                            <span class="project-year">2023</span>
                         </div>
-                        <p class="project-desc">Escáner súper portatil para bajar la información de los vehículos diesel
-                            de manera rápida y sencilla.</p>
-                        <p class="project-tech">Telegram BOT, Arduino, C++, Python, Telegram, J1939, CAN Bus</p>
-                        <a href="#" class="project-link">Ver proyecto</a>
+                        <p class="project-desc">[Descripción breve.]</p>
+                        <p class="project-stack">[Tecnología 1], [Tecnología 2]</p>
                     </li>
 
                 </ul>
-            </div>
-        </section>
+            </section>
 
-        <!-- ─── Notas ────────────────────────────────────────── -->
-        <section id="notas">
-            <div class="container">
-                <p class="section-label">Notas</p>
-
-                <!-- Cuando haya publicaciones, reemplaza el parrafo de abajo con la lista. -->
-                <p class="empty-state">No hay publicaciones aun.</p>
-
-                <!--
-        <ul class="notes-list">
-          <li class="note-item">
-            <a href="#" class="note-title">[Titulo de la nota]</a>
-            <span class="note-date">[Mes AÑO]</span>
-          </li>
-        </ul>
-        -->
-            </div>
-        </section>
-
-        <!-- ─── Contacto ─────────────────────────────────────── -->
-        <section id="contacto">
-            <div class="container">
-                <p class="section-label">Contacto</p>
-                <div class="contact-links">
-
-                    <div class="contact-group">
-                        <span class="contact-link-label">Correo</span>
-                        <a href="mailto:omargtz.dev@gmail.com" class="contact-link">omargtz.dev@gmail.com</a>
-                    </div>
-
-                    <div class="contact-group">
-                        <span class="contact-link-label">GitHub</span>
-                        <a href="https://github.com/OmarGtze" target="_blank" rel="noopener noreferrer"
-                            class="contact-link">github.com/OmarGtze</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
+        </article>
     </main>
-
-    <footer>
-        <div class="footer-inner">
-            <p>Omar Gutiérrez</p>
-            <p>2026</p>
-        </div>
-    </footer>
 
     <script>
         (function () {
